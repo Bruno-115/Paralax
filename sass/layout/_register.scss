@@ -1,0 +1,155 @@
+.form{
+    background-image: linear-gradient( rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(../../imgs/_fd5daa57-0058-4009-83e0-381af062c621.jpeg);
+    display: grid;
+    grid-template-columns: repeat(10, 10vw);
+    grid-template-rows: repeat(12, 10vh);
+    height: 100%;
+    @media screen and (max-width:$mb-600) {
+        grid-template-rows: repeat(12, 8vh);
+      }
+    &__Title{
+        font-size: 6rem;
+        text-transform: uppercase;
+        grid-column: 1 / 10;
+        margin-left: 10vw;
+        text-align: center;
+        color: $color-white;
+        
+    }
+    &__cadastro{
+        grid-column: 4 / 8;
+        background-image: linear-gradient(to right bottom,$color-backgroundRegistration1,$color-backgroundRegistration2,$color-backgroundRegistration3);
+        grid-row: 2 / 12;
+        border-radius: 1rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        &-fix{
+        background-image: linear-gradient(to right bottom,$color-backgroundRegistration1,$color-backgroundRegistration2,$color-backgroundRegistration3);
+        height: 100%;
+        border-radius: 1rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        }
+        @media screen and (max-width:$mb-1250) {
+            grid-row: 3 / 12;
+          }
+          @media screen and (max-width:$mb-600) {
+            grid-row: 2 / 11;
+            grid-column: 3 / 9;
+          }
+          @media screen and (max-width:$mb-400) {
+            grid-row: 2 / 9;
+            grid-column: 3 / 9;
+          }
+    &-CheckBox{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+        &-input{
+        position: relative;
+        background-color: transparent;
+        border: none;
+        margin: 2rem 12rem;
+        padding: 2rem 2rem;
+        font-size: 2rem;
+        transition: all .4s ease-in;
+        color: $color-white;
+        border-bottom: 3px solid $color-negation;
+        @media screen and (max-width:$mb-1000) {
+            margin: 0 5rem;
+            text-align: center;
+          }
+         
+        cursor: pointer;
+        &:last-child{
+        margin-bottom: 10rem;
+        }
+        &:focus{
+            background-color: transparent;
+            outline: none;
+            border-bottom: 3px solid $color-price-3;
+        }
+
+        &-CheckBox{
+            height: 1.5rem;
+            width: 1.5rem;
+            margin-top: 3rem;
+            outline: none;
+            text-align: center;
+            &_Text{
+                text-align: center;
+                font-size: 1.25rem;
+                color: $color-white;
+               
+            }
+        }
+        &-wrong{
+            animation: wrongInput 1s;
+        }
+
+
+        &-accept{
+            border-bottom: 4px solid $color-accept;
+        }
+
+        &__highlight{
+            margin-left: .5rem;
+            cursor: pointer;
+            color: $color-white;
+        }
+    }
+}
+    &__btn{
+    font-size: 4rem;
+    align-self: center;
+    margin-bottom: 2rem;
+    padding: 1rem 5rem;
+    background-color:$color-backgroundRegistration2;
+    border-radius: 2rem;
+    transition: all .4s linear;
+    @media screen and (max-width:$mb-600) {
+       padding: 2rem 5rem;
+       font-size: 6rem;
+       border: 2px solid $color-black;
+      }
+    @media screen and (max-width:$mb-1250) {
+        font-size: 2rem;
+      }
+        &:hover{
+            transform: translateY(-2rem);
+            background-color: $color-doubt-1-of-2;
+        }
+    }
+    
+}
+
+input[type="number"]{
+    -moz-appearance: textfield;
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button{
+    -webkit-appearance: none;
+}
+
+input[type="data"]{
+    -moz-appearance: textfield;
+}
+
+input[type="data"]::-webkit-outer-spin-button,
+input[type="data"]::-webkit-inner-spin-button{
+    -webkit-appearance: none;
+}
+
+.input__highlight:link,
+.input__highlight:visited,
+.input__highlight:active{
+    color: $color-white;
+}
+
+::placeholder { 
+    color:$color-white;
+}

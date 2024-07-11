@@ -1,0 +1,33 @@
+[
+    {
+        "id": 2,
+        "title": "Gamer",
+        "subtitle": "Internet para aventuras",
+        "mega": 70,
+        "price": "69,00",
+        "description1": "Curtir seus jogos favoritos",
+        "description2": "Diminuir uma das causas da derrota",
+        "description3": "Sem taxa de instalação"
+    },
+    {
+        "id": 1,
+        "title": "Família",
+        "subtitle": "Internet para toda a família",
+        "mega": 35,
+        "price": "49,00",
+        "description1": "Curtir com a família",
+        "description2": "Assistir séries e filmes juntos",
+        "description3": "Sem taxa de instalação"
+    },
+    {
+        "id": 3,
+        "title": "Dedicado",
+        "subtitle": "Internet totalmente dedicada",
+        "mega": 100,
+        "price": "89,00",
+        "description1": "Internet dedicado ao cliente",
+        "description2": "Menor tempo de espera",
+        "description3": "Sem taxa de instalação"
+    }
+]
+

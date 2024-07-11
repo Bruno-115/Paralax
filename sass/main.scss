@@ -1,0 +1,24 @@
+//Funções
+@import "abstracts/mixins";
+@import "abstracts/variables";
+
+//Base
+@import "base/animation";
+@import "base/base";
+@import "base/typography";
+@import "base/utilities";
+
+//Componentes
+@import "components/buttom";
+@import "components/card";
+@import "components/head-video";
+
+//Estrutura/Layout
+@import "layout/footer";
+@import "layout/register";
+@import "layout/login";
+@import "layout/grid";
+@import "layout/sobre";
+@import "layout/navigation";
+
+

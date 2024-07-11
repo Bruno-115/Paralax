@@ -1,0 +1,395 @@
+.Login{
+    &Info{
+    background-image: url(../../imgs/denys-churchyn-Kwmz_c_NiYk-unsplash.jpg);
+    background-size: 100vh;
+    height: 85vh;
+    @media screen and (max-width:$mb-800) {
+        height: 60vh;
+      }
+      @media screen and (max-width:$mb-400) {
+        height: 50vh;
+      }
+      @media screen and (max-width:$mb-500) {
+        height: 38vh;
+      }
+    }
+    &__Img1{
+        grid-column: 1;
+        position: absolute;
+        bottom: 10%;
+        margin-left: 2rem;
+        height: 6rem;
+        @media screen and (max-width:$mb-800) {
+            bottom: 35%;
+          }
+          @media screen and (max-width:$mb-600) {
+            bottom: 50%;
+          }
+          @media screen and (max-width:$mb-500) {
+            bottom: 60%;
+          }
+    }
+    &__Img2{
+        grid-column: 8;
+        grid-row: 1;
+        height: 6rem;
+        
+    }
+    &__Acc{
+        display: grid;
+        grid-template-columns: repeat(8, 12.5vw);
+        grid-template-rows: repeat(2, 20vh);
+        
+    }
+    &__Title{
+        font-size: 4rem;
+        text-align: start;
+        border-top: 4px solid  $color-price-subtitle-3;
+        color: $color-white;
+        padding-left: 2rem;
+        padding-bottom: 2rem;
+        text-transform: uppercase;
+    }
+    &__Info{
+        font-size: 2rem;
+        grid-column: 3 / 8;
+        color: $color-white;
+        
+    }
+    &__Type-Info{
+        display: flex;
+        padding: 2rem;  
+        @media screen and (max-width:$mb-1100) {
+            flex-wrap: wrap;
+            padding: 1rem;
+          }
+    }
+    &__Text{
+        &-Info{
+            text-transform: uppercase;
+            margin-right: 1rem;
+        }
+        &-Display{
+            letter-spacing: .2rem;
+            @media screen and (max-width:$mb-1250) {
+                display: inline-block;
+                white-space: nowrap;
+              }
+              
+        }
+        &-Change{   
+            background-color: transparent;
+            border: none;
+            font-size: 2rem;
+            text-decoration: none;
+            margin-left: 1rem;
+            color: $color-price-subtitle-3;
+            cursor: pointer;
+            @media screen and (max-width:$mb-1250) {
+                display: inline-block;
+                white-space: nowrap;
+              }
+            
+        }
+    }
+    &__Plan{
+        height: 80vh;
+        @media screen and (max-width:$mb-1250) {
+            height: 90vh;    
+        }
+        @media screen and (max-width:$mb-800) {
+            height: 70vh;
+          }
+          @media screen and (max-width:$mb-500) {
+            height: 38vh;
+          }
+          @media screen and (max-width:$mb-400) {
+           height: 35vh;
+          }
+        &-MainTitle{
+          font-size: 4rem;
+          border-top: 4px solid $color-price-subtitle-3;
+          text-align: end;
+          padding-right: 2rem;
+          padding-bottom: 2rem;
+          text-transform: uppercase;
+        }
+        &-Display{
+            text-align: center;
+        }
+        &-Title{
+            font-size: 5rem;
+            text-transform: uppercase;
+            background-image: linear-gradient(
+            to right,
+            $color-price-1,
+            $color-price-subtitle-2
+          );
+          -webkit-background-clip: text;
+          color: transparent;
+             
+        }
+        &-Subtitle{
+            font-size: 5rem; 
+            background-image: linear-gradient(
+            to right,
+            $color-description,
+            $color-price-subtitle-2
+          );
+          -webkit-background-clip: text;
+          color: transparent;    
+        }
+        &-Mega{
+            font-size: 3.5rem;
+        }
+        &-Valor{
+            font-size: 4rem;
+            color:$color-accept;
+        }
+        &-Atraso{
+            font-size: 4rem;
+            color: $color-negation;
+        }
+        &-Boleto:visited,
+        &-Boleto:link{
+            font-size: 4rem;
+            text-decoration: none;
+            padding: 1rem;
+            background-color: $color-black;
+            border-radius: 2rem;
+            color: white;
+            cursor:pointer;
+           
+        }
+    }
+    &__Doubt{
+        background-color: #111;
+        &-Title{
+            font-size: 4rem;
+            text-transform: uppercase;
+            margin-top: 2rem;
+            border-top: 4px solid $color-price-subtitle-3;
+            padding-left: 2rem;
+            color: $color-white;
+        }
+        &-Place{
+            
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        &-Text{
+            background-color: #111;
+            font-size: 2rem;
+            text-transform: uppercase;
+            color: $color-white;
+            border: none;
+            width: 60rem;
+            padding: 2rem;
+            border-bottom: 4px solid $color-price-subtitle-3;
+            margin-bottom: 2rem;
+            outline: none;
+        }
+        &-Description{
+            resize: none;
+            font-size: 2rem;
+            outline: none;
+            width: 90vw;
+            height: 30rem;
+            border-radius: 1rem;
+            border: 4px solid $color-price-subtitle-3;
+            margin-bottom: 2rem;
+            color: #000;
+            text-align: justify;
+            
+        }
+        &-Send{
+            font-size: 4rem;
+            padding: 1.5rem 5.5rem;
+            background-color: $color-price-subtitle-3;
+            border: none;
+            cursor: pointer;
+            border-radius: 2rem;
+            margin-bottom: 3rem;
+        }
+    }
+}
+
+.Popup__BackgroundBlur {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    height: 1000rem;
+    width: 1000rem;
+    background-color: rgba($color-black-1, $alpha: 0.8);
+    filter: blur(10px);
+    z-index: 2;
+    overflow: visible;
+}
+
+.Popup {
+    position: fixed;
+    z-index: 4;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 75vh;
+    width: 70vw;
+    overflow: visible;
+    background-color: rgba($color-price-subtitle-2-of-2, $alpha: .99);
+    box-shadow: 0 0 24rem $color-blue-dark-1;
+    filter: none;
+    color: $color-white; 
+    border-radius: 2rem;
+    @media screen and (max-width:$mb-1250) {
+        height: 85vh;
+      }
+      @media screen and (max-width:$mb-700) {
+        height: 60vh;
+      }
+      @media screen and (max-width:$mb-400) {
+        height: 50vh;
+      }
+    &__Layout{
+        display: flex;
+        flex-direction: column;
+    }
+     &__Close{
+        position: relative;
+        background-color: $color-black;
+        padding: 1rem 1.5rem;
+        margin-left: 2rem;
+        margin-top: 2rem;
+        border: none;
+        font-size: 2rem;
+        border-radius: 12rem;
+        left:90%;
+        cursor: pointer;
+        color: $color-white;
+        transition:all .4s;
+        &:hover{
+            top: -.5%;
+            transform: scale(1.1);
+        }
+    }
+    &__Info{
+        text-align: center;
+        text-transform: uppercase;
+        margin-bottom: 2rem;
+        font-size: 3rem;
+        &-red{
+          color: $color-negation;
+        }
+        &-green{
+          color: #98FB98;
+        }
+    }
+    &__NewInfo{
+        font-size: 3rem;
+        text-align: center;
+        border: none;
+        outline: none;
+        border-bottom: 4px solid $color-price-subtitle-3 ;
+        border-top: 4px solid $color-price-subtitle-2;
+        margin-bottom: 2rem;
+        border-radius: 2rem;
+    }
+    &__ConfirmBtn{
+       border-radius: 4rem;
+       padding: 2rem 6rem;
+       position: relative;
+       font-size: 3rem;
+       border: none;
+       cursor: pointer;
+       background-color: $color-doubt-1-of-2;
+       left: 50%;
+       transform: translate(-50%);
+       &:hover{
+        top: -.5%;
+       }
+       &-wrong{
+        background-color: red;
+       }
+    }
+}
+.login__pg{
+  display: grid;
+  background-image: url(./../../imgs/_54537e74-b897-4ab3-8549-7226a226a651.jpeg);
+  grid-template-columns: repeat(12, 8.333vw );
+  grid-template-rows: repeat(14, 7.15vh );
+}
+.form__pg{
+    &-input{
+      font-size: 3rem;
+      padding: 0.5rem;
+      text-align: center;   
+      margin: 3rem 0;
+      border-radius: 6rem;
+      border-color: $color-registrar-1-of-2;
+      border-width: 1rem;
+      &:focus{
+        outline: none;
+        border-color: $color-price-subtitle-3;
+      }
+    }
+    &-btn{
+      margin-top: 2.5rem;
+      font-size: 2.5rem;
+      padding: 1.5rem 4rem;
+      border: none;
+      border-radius: 1rem;
+      background-color: $color-black;
+      margin-bottom: 6rem;
+      transition: all .6s;
+      &:hover{
+        background-color: $color-price-subtitle-3;
+        color: $color-black;
+        top: -5%;
+        transform: scale(1.1);
+      }
+    }
+    &-type{
+      font-size: 2rem;
+      text-transform: uppercase;
+      text-align: center;
+      margin-bottom: -2rem;
+      color: $color-white;
+      &-wrong{
+        color: $color-negation;
+      }
+      &-error{
+        font-size: 3rem;
+        color: $color-negation;
+        text-transform: uppercase;
+        text-align: center;
+        margin-top: 2rem;
+ 
+      }
+    }
+    &-nav{
+      margin-top: -1.5rem;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+    }
+    &-singup{
+      font-size: 2rem;
+      color: $color-doubt-1-of-2;
+      border-bottom: 2px solid $color-doubt-1-of-2;
+    }
+    &-forgot{
+      font-size: 2rem;
+      color:#98FB98;
+      border-bottom: 2px solid #98FB98;
+    }
+  }
+
+  .login__pg-back{
+    background-image: linear-gradient(to right,$color-login-1,$color-login-1-of-2,$color-login-2-of-2);
+    display: flex;
+    flex-direction: column;
+    grid-column: 4 / 10;
+    grid-row: 2 / 13;
+    border-radius: 2rem;
+  }

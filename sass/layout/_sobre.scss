@@ -1,0 +1,66 @@
+.sobre {
+  background-color: $color-white;
+  height: 100vh;
+  margin-bottom: 5rem;
+  width: 100vw;
+  overflow: hidden;
+  @media screen and (max-width:$mb-700) {
+    height: 70vh;
+  }
+  @media screen and (max-width:$mb-500) {
+    height: 40vh;
+  }
+  @media screen and (max-width:$mb-400) {
+    height: 35vh;
+  }
+  &__baixo {
+    &-ilustra {
+      &-photo {
+        display: inline-block;
+        transition: all 0.4s;
+        margin-right: 1rem;
+        transform: scale(1.4);
+        @media screen and (max-width:$mb-1000) {
+          margin-left: -4rem;
+          transform: scale(1.1);
+        }
+        @media screen and (max-width:$mb-800) {
+          margin-left: -12rem;
+          transform: scale(1);
+        }
+        @media screen and (max-width:$mb-700) {
+          margin-left: -16rem;
+          transform: scale(0.8);
+        }
+        @media screen and (max-width:$mb-600) {
+          margin-left: -22rem;
+          
+        }
+        @media screen and (max-width:$mb-500) {
+          transform: scale(0.6);
+          margin-left: -30rem;
+          margin-top: -16rem;
+        }
+        @media screen and (max-width:$mb-400) {
+          transform: scale(0.5);
+          margin-left: -35rem;
+          margin-top: -16rem;
+        }
+      }
+    }
+  }
+  &__text-info{
+    @media screen and (max-width:$mb-1250) {
+      
+      font-size: 1.7rem;
+    }
+    @media screen and (max-width:$mb-700) {
+      font-size: 1.5rem;
+    }
+    @media screen and (max-width:$mb-500) {
+      font-size: 1.1rem;
+    }
+  }
+}
+
+

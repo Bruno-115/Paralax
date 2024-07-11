@@ -1,0 +1,40 @@
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+  font-family: "Orbitron", sans-serif;
+  cursor: default;
+}
+
+html {
+  font-size: 70%;
+  scroll-behavior: smooth;
+  @media screen and (max-width:$mb-1000) {
+    font-size: 60%;
+  }
+  @media screen and (max-width:$mb-800) {
+    font-size: 55%;
+  }
+  @media screen and (max-width:$mb-700) {
+    font-size: 50%;
+  }
+  @media screen and (max-width:$mb-600) {
+    font-size: 45%;
+  }
+  @media screen and (max-width:$mb-500) {
+    font-size: 40%;
+  }
+  @media screen and (max-width:$mb-400) {
+    font-size: 35%;
+  }
+}
+
+body {
+  box-sizing: border-box;
+}
+
+html,body{
+  overflow-x: hidden;
+}

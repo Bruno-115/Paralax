@@ -1,0 +1,124 @@
+.btn {
+  text-decoration: none;
+  text-transform: uppercase;
+  position: relative;
+  cursor: pointer;
+  color: $color-white;
+
+  &__header {
+    animation: moveInBottom 1.2s ease-out;
+    margin-top: 14rem;
+    &:link,
+    &:visited {
+      display: inline-block;
+      padding: 1.5rem 2rem;
+      font-size: 2.8rem;
+      border-radius: 10rem;
+      margin-left: 0;
+      margin-right: 6rem;
+      transition: all 0.4s;
+      @media screen and (max-width:$mb-500) {
+        font-size: 2.5rem;
+      }
+    }
+    &:hover,
+    &:active {
+      background-color: $color-white;
+      color: $color-black;
+      transition: all 0.3s;
+      cursor: crosshair;
+      transform: translateY(-2rem);
+    }
+    &-blue {
+      background-color: $color-blue-dark-1;
+    }
+    &-white {
+      background-color: $color-grey-dark;
+    }
+  }
+
+  &__price {
+    position: absolute;
+    bottom: 2%;
+    left: 50%;
+    transform: translate(-50%, -0%);
+    background-color: $color-white;
+    padding: 1.5rem;
+    @media screen and (max-width:$mb-600) {
+      padding: 1rem;
+    }
+    &:link,
+    &:visited {
+      display: block;
+      color: black;
+      font-size: 2rem;
+      border-radius: 2rem;
+      @media screen and (max-width:$mb-600) {
+        font-size: 1.5rem
+      }
+    }
+
+    &-1 {
+      &:hover,
+      &:active {
+        background-color: $color-red-dark-1;
+        color: $color-white;
+      }
+    }
+    &-2 {
+      &:hover,
+      &:active {
+        background-color: $color-blue-dark-1;
+        color: $color-white;
+      }
+    }
+    &-3 {
+      &:hover,
+      &:active {
+        background-color: $color-green-dark-1;
+        color: $color-white;
+      }
+    }
+  }
+
+  &--form {
+    display: block;
+    left: 95%;
+    top: 100%;
+
+    background-color: $color-white;
+    padding: 1.5rem;
+    width: 20rem;
+    border-radius: 5rem;
+    background-color: $color-doubt-1;
+    font-size: 2rem;
+    transition: all 0.3s;
+
+    &:hover {
+      scale: 1.2;
+      background-color: $color-doubt-1-of-2;
+      color: $color-black;
+      font-size: 2rem;
+    }
+  }
+}
+
+.form__btn-wait{
+    font-size: 3rem;
+    align-self: center;
+    margin-bottom: 2rem;
+    padding: 1rem 2rem;
+    cursor: not-allowed;
+    border: none;
+    color: $color-negation;
+    border-radius: 2rem;
+    transition: all .4s linear;
+    @media screen and (max-width:$mb-600) {
+       padding: 2rem 5rem;
+       font-size: 6rem;
+       border: 2px solid $color-black;
+      }
+    @media screen and (max-width:$mb-1250) {
+        font-size: 2rem;
+      }
+}
